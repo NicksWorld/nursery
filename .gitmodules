@@ -1,0 +1,3 @@
+[submodule "haunt"]
+	path = haunt
+	url = https://git.dthompson.us/haunt.git
