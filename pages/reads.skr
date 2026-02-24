@@ -1,0 +1,46 @@
+(define (container . contents)
+  `(div ,@contents))
+
+(define (article-entry name author url . description)
+  (container
+    '(@ (style "margin-left:2rem;position:relative;") (class "indent-block"))
+    (p (anchor name url) [ - ] author)
+    (p description)))
+
+(document
+  :title [Great Reads!]
+  (p [This is a collection of some of my favorite independent articles I've
+      collected over time.])
+  (article-entry
+    [The Only Two Markup Languages]
+    [gingerBill]
+    "https://www.gingerbill.org/article/2026/01/19/two-families-of-markup-languages/"
+    [This article inspired me to do a deep dive into available markup languages,
+     where I came across ]
+    (anchor [Skribe] "https://www-sop.inria.fr/members/Manuel.Serrano/publi/jfp05/article.html")
+    [ which I am now using to build my website! The article doesn't consider s-expression
+     based systems to be arbitrary proper markup languages, though it lead me to
+     consider them as a scriptable markup system.])
+  (article-entry
+    [A Website to Destroy all Websites]
+    [henry.codes]
+    "https://henry.codes/writing/a-website-to-destroy-all-websites/"
+    [A great essay on the modern internet, how we have strayed away from its roots,
+     and what we can do to bring back the experience of the old internet. This
+     article helped motivate me to actually start developing my personal
+     website again, this time self-hosting git too!])
+  (article-entry
+    [A Social Filesystem]
+    [Dan Abramov]
+    "https://overreacted.io/a-social-filesystem/"
+    [An amazing primer for ATProto, starting with familiar concepts building
+     to the distributed storage and lexicon systems that make it so powerful!])
+  (article-entry
+    [The End of the curl Bug Bounty]
+    [Daniel Stenberg]
+    "https://daniel.haxx.se/blog/2026/01/26/the-end-of-the-curl-bug-bounty/"
+    [A sad recount of how AI is being absued in spaces meant to reward important
+     security work, driven by money and hallucinations, and the endless work it
+     has been creating for maintainers. I hate to see this to become the standard
+     when it comes to bug bounty programs, but unless AI usage ethics somehow improve,
+     this will likely become a mainstay.]))
