@@ -33,11 +33,11 @@ $bg2: #272626;
 /*!  Garden Styles */
 @for $i from 1 through 6 {
     h#{$i} {
+        margin: 0.67em;
         font-size: 2rem - calc($i / 7);
         color: $coral2;
     }
 }
-
 
 strong { font-weight: bold; }
 em { front-style: oblique; }
@@ -67,8 +67,25 @@ body {
     );
 }
 
-.title {
+#title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#title > * {
+    margin-top: 0.67rem;
     margin-bottom: 0;
+}
+
+#title > h1 {
+    margin-left: 0.25rem;
+}
+
+.garden-icon {
+    height: 2rem;
+    width: 2rem;
+    background-image: url("/assets/garden.svg");
 }
 
 .primary-nav {

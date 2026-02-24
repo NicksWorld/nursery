@@ -1,0 +1,17 @@
+(document
+  :title [About Me]
+  (p [My name is Nicholas McDaniel, and I live in Maine working in printing.
+      I have had an interest in software development since I was around 10,
+      and have been building things ever since. My first "real" programming
+      language was javascript, writing a combination of websites and simple
+      chatbots. During those formative years I grew a lot, making good friends
+      and learning new concepts.])
+  (p [Nowadays I more often find myself developing in C++, Rust, or Lua building
+      small projects, or contributing to those I like. Currently my biggest
+      interests are in PDF construction and composition, and digital communication
+      systems.])
+
+  (p [If you would like to get in touch with me for any reason, I can be reached
+      via email at ] (anchor [nmcdaniel@tty.garden] "mailto:nmcdaniel@tty.garden")
+     [, Matrix at ] (anchor [nick:pudding.town] "https://matrix.to/#/@nick:pudding.town")
+     [, or Bluesky at ] (anchor [@tty.garden] "https://bsky.app/profile/tty.garden")))
