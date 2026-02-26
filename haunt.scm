@@ -1,6 +1,3 @@
-(add-to-load-path "./builders/")
-(add-to-load-path "./templates/")
-
 (use-modules
   (haunt asset)
   (haunt builder assets)
@@ -13,15 +10,15 @@
   (nursery builders commandline))
 
 
-(site #:title "tty garden"
-  #:domain
-  "tty.garden"
+(site
+  #:title "tty garden"
+  #:domain "tty.garden"
   #:readers
-  (list
-    sxml-reader
-    skribe-reader)
+    (list
+      sxml-reader
+      skribe-reader)
   #:builders
-  (list
-    (static-directory "assets")
-    (cmd-builder '("sass" "--style=compressed") "css/core.scss" "core.css")
-    (flat-pages "pages" #:template nursery-template-base)))
+    (list
+      (static-directory "assets")
+      (cmd-builder '("sass" "--style=compressed") "css/core.scss" "core.css")
+      (flat-pages "pages" #:template nursery-template-base)))

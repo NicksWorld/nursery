@@ -1,15 +1,13 @@
 (define-module (nursery builders commandline)
-  #:use-module
-  (ice-9 match)
-  #:use-module
-  (haunt artifact)
-  #:export
-  (cmd-artifact cmd-builder))
+  #:use-module (ice-9 match)
+  #:use-module (haunt artifact)
+  #:export (cmd-artifact cmd-builder))
 
 (define (cmd-artifact cmd source destination)
   (unless (file-exists? source)
     (error "input file does not exist" source))
-  (make-artifact destination
+  (make-artifact
+    destination
     (lambda (output)
       (let ((command (append cmd (list source))))
         (format #t "run '~a' -> '~a'~%"

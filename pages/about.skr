@@ -3,7 +3,7 @@
   (p [My name is Nicholas McDaniel, and I live in Maine working in printing.
       I have had an interest in software development since I was around 10,
       and have been building things ever since. My first "real" programming
-      language was javascript, writing a combination of websites and simple
+      language was JavaScript, writing a combination of websites and simple
       chatbots. During those formative years I grew a lot, making good friends
       and learning new concepts.])
   (p [Nowadays I more often find myself developing in C++, Rust, or Lua building

@@ -1,23 +1,28 @@
 (document
   :title "tty garden"
 
-  (p [Hello! This is a place where I can consolidate my thoughts and creations.
-      I enjoy building niche software, and occassionally contributing to other's
-      creations! I build in a variety of languages, including but not limited to
-      C++, Rust, Lua, and Scheme.])
+  (p
+    [Hello! This is a place where I can consolidate my thoughts and creations.
+     I enjoy building niche software, and occasionally contributing to other's
+     creations! I build in a variety of languages, including but not limited to
+     C++, Rust, Lua, and Scheme.])
 
-  (p [You can find a list of my current projects here at ]
-     (anchor [seed.tty.garden] "https://seed.tty.garden/nmcdaniel") [. ]
-     [Some of my older work is still on GitHub under ]
-     (anchor [NicksWorld] "https://github.com/NicksWorld") [.])
+  (p
+    [You can find a list of my current projects here at ]
+    (anchor [seed.tty.garden] "https://seed.tty.garden/nmcdaniel") [. ]
+    [Some of my older work is still on GitHub under ]
+    (anchor [NicksWorld] "https://github.com/NicksWorld") [.])
 
-  (p [There isn't a whole lot here yet, but in the meantime you can find some of
-      my favorite independent articles at ] (anchor [tty.garden/reads] "/reads")
-     [, with a bit of context as to why I love them! ])
+  (p
+    [There isn't a whole lot here yet, but in the meantime you can find some of
+     my favorite independent articles at ] (anchor [tty.garden/reads] "/reads")
+    [, with a bit of context as to why I love them! ])
 
-  (p [If you want to contact me, or just have a friendly chat, I can be reached via
-      email at ] (anchor [nmcdaniel@tty.garden] "mailto:nmcdaniel@tty.garden")
-     [, or on bluesky at ]
-     (anchor [@tty.garden] "https://bsky.app/profile/tty.garden") [.])
+  (p
+    [If you want to contact me, or just have a friendly chat, I can be reached via
+     email at ] (anchor [nmcdaniel@tty.garden] "mailto:nmcdaniel@tty.garden")
+    [, or on Bluesky at ]
+    (anchor [@tty.garden] "https://bsky.app/profile/tty.garden") [.])
 
-  (p [I hope you have a wonderful day!]))
+  (p
+    [I hope you have a wonderful day!]))
